@@ -1,6 +1,6 @@
 services:
     backend-flask:
-        image: kolv1/lms-backend:2.0.0
+        image: vkol1/lms-backend:2.0.0
         ports:
             - "4000:4000"
         environment:
@@ -8,7 +8,7 @@ services:
             - FLASK_APP=app.py
 
     frontend:
-        image: kolv1/lms-frontend:2.0.0 # Replace with your Docker Hub username
+        image: vkol1/lms-frontend:2.0.0 # Replace with your Docker Hub username
         pull_policy: always
         ports:
             - "80:80"
