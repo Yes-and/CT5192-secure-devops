@@ -18,11 +18,11 @@ jobs:
 
       - name: Build backend image
         run: |
-          docker build -t aqaziuog/lms-backend:local ./backend-flask
+          docker build -t vkol1/lms-backend:local ./backend-flask
 
       - name: Build frontend image
         run: |
-          docker build -t aqaziuog/lms-frontend:local ./frontend-react
+          docker build -t vkol1/lms-frontend:local ./frontend-react
 
       - name: Run Trivy vulnerability scanner on backend
         uses: aquasecurity/trivy-action@master
